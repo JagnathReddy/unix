@@ -6,8 +6,9 @@
 #include<string.h>
 
 using namespace std;
-int main(){
-    int status=link("file1.txt","file2.txt");
+int main(int argc, char *arg[]){
+    // link("file1.txt","file2.txt")
+    int status=link(arg[1],arg[2]);
     if(status==0){
         cout<<"linked successfully"<<endl;
     }else{
