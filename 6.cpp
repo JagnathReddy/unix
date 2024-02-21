@@ -25,6 +25,7 @@ int main() {
          << " => ";
     cin >> p.arrivalTime >> p.burstTime;
     p.timeLeft = p.burstTime;
+    id++;
   }
   int processesCompleted = 0;
   int currentTime = 0;
